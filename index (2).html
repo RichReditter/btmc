@@ -5,11 +5,13 @@
   <meta charset='UTF-8'>
   <link rel="stylesheet" href="index.css">
   <title>название хтмл страницы</title>
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
+</head>
 <body>
-  <h2>
-    <header>
+    <header class="container">
       <nav>
         <ul>
           <li><a href="#about">О магазине</a></li>
@@ -19,31 +21,55 @@
       </nav>
     </header>
     <main>
-      <section id="about" style="height: 100vh">
+      <section class="container catalog" id='about'>
         <h2>О магазине</h2>
+        <div>
         <div class="product-card">
           <div class="product-card_image">
-            <img src="mac.jpeg" height="200px" />
+            <img src="mac.jpeg"/>
           </div>
           <div class="product-card_info">
             <div class="product-card_info_title">
               <p>Ноутбук Apple Macbook Air13" M1 2020 MGN63</p>
               <p>2780,00 p.</p>
             </div>
+            <div class="kurz">
+              <p>Краткая характеристика</p>
+            </div>
+            <div class="btn">
+              <a href="https://google.com">Купить</a>
+            </div>
           </div>
         </div>
+        <div class="product-card">
+          <div class="product-card_image">
+            <img src="mac.jpeg"/>
+          </div>
+          <div class="product-card_info">
+            <div class="product-card_info_title">
+              <p>Ноутбук Apple Macbook Air13" M1 2020 MGN63</p>
+              <p>2780,00 p.</p>
+            </div>
+            <div class="kurz">
+              <p>Краткая характеристика</p>
+            </div>
+            <div class="btn">
+              <a href="https://google.com">Купить</a>
+            </div>
+          </div>
+        </div>
+        </div>
       </section>
-      <section id="catalog" style="height: 100vh">
+      <section class="container"  style="height: 100vh">
         <h2>Каталог</h2>
       </section>
-      <section id="delivery" style="height: 100vh">
+      <section class="container" id='delivery' style="height: 100vh">
         <h2>Доставка</h2>
       </section>
     </main>
     <footer?>
 
       </footer>
-  </h2>
 </body>
 
 

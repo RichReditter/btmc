@@ -1,12 +1,13 @@
 *{
     margin: 0px;
-    padding: 0px;       /*падинги маргины*/
+    padding: 0px;       /*обязательно всегда ставить*/
   }
 html{
     scroll-behavior: smooth;    
-  
 }
-  
+ul{
+    list-style: none;
+}
 header{
     margin-bottom: 30px;
 }
@@ -27,26 +28,80 @@ header nav ul li a{
 header nav ul li{
     margin: 40px 5px;
 }
-header{
-  display:inline;
-}
 header nav ul li a:hover{                    /*применяет стили, когда мы наводим курсор мыши*/
   color: blue;
   transition: all 0.9s;
-  background-color: linear-gradient(45deg,  #0b646d 0%, #2F847C 100%);
+  background: linear-gradient(45deg,  #0b646d 0%, #2F847C 100%);
 }
 header nav ul{
     display: flex;
     justify-content: end;   /*отправляет боксы на правый край*/
 }
 .product-card{
+    margin:20px;
     display:flex;
     width: 100%;
 }
 .product-card_info{
     width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .product-card_info_title{
     display: flex;
     justify-content: space-between;
+}
+.product-card_image{
+    border: 1px solid #000;
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.product-card_image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.btn{
+    margin-top: auto;
+    display: flex;
+    justify-content: end;
+}
+.btn a{
+    display: block;
+    background: linear-gradient(rgb(230, 153, 11), rgb(218, 25, 218));
+    padding: 3px 7px;
+    color: rgb(64, 36, 95);
+    border-radius: 15px;
+    border: 1px solid #666;
+    text-decoration: none;
+}
+.kurz{
+    color: rgba(0,0,0,0.5);
+    font-size: 15px;
+}
+.container{
+    width: 1000px;
+    margin: 0px auto;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+    background: #ebf3f7;
+}
+.catalog{
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 14px 15px 150px rgba(0,0,0,0.5);/* тень */
+    border-radius: 10px;
+    padding: 30px;
+    transition: box-shadow 5s;
+}
+.catalog:hover{
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+    transition: box-shadow 1s;
 }
